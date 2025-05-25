@@ -1,0 +1,53 @@
+body {
+  font-family: "Comic Sans MS", cursive;
+  background-color: #fff0f5;
+  text-align: center;
+  padding: 40px;
+  background-image: url("mi-min-pkpqoBp11Jc-unsplash.jpg");
+}
+
+#letter-container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffe4e1;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.4);
+}
+
+.message {
+  display: none;
+  font-size: 20px;
+  margin: 20px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.message.show {
+  display: block;
+}
+
+#next-btn {
+  padding: 10px 20px;
+  background-color: hotpink;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#next-btn:hover {
+  background-color: deeppink;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
